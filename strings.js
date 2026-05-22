@@ -13,13 +13,6 @@ const NodeJsDevSpaceSplit = NodeJsDev.split(" ")
 const okak = "42"
 const okakLenght = okak.length
 
-const products = [
-    { name: "Ноутбук", price: 75000 },
-    { name: "Мышь", price: 1500 },
-    { name: "Монитор", price: 32000 },
-    { name: "Клавиатура", price: 3500 },
-    { name: "Наушники", price: 8000 }
-]
 
 
 .slice()
