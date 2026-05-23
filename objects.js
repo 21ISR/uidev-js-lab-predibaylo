@@ -5,6 +5,27 @@ const students = [
   { name: "Григорий", grade: 4.1, passed: true },
   { name: "Дарья", grade: 2.5, passed: false },
 ]
-
+const book = {
+    title: '«Мастер и Маргарита»',
+    author: 'Булгаков М.А.',
+    year: '1967 г.',
+    pages: '480 стр.',
+    available: true,  
+    
+  info(){
+    return `${this.title}, ${this.author}, ${this.year}, ${this.pages}`
+  }
+}
 const u1 = { name: "Иван", age: 20, city: "Казань" }
 const u2 = { name: "Иван Петров", email: "ivan@mail.ru", city: "Москва" }
+
+console.log(book.info())
+console.log('')
+
+console.log(`title = ${book.title} author = ${book.author}`)
+console.log('')
+
+console.log(students.filter(students => students.passed == true))
+console.log(students.find(students => students.grade > 4.5))
+console.log(students.recude((acc, n) => acc + n, 0))
+
