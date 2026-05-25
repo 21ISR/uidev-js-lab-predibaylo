@@ -5,6 +5,8 @@ const students = [
   { name: "Григорий", grade: 4.1, passed: true },
   { name: "Дарья", grade: 2.5, passed: false },
 ]
+const studentsGrade = students.map(student => student.grade)
+
 const book = {
     title: '«Мастер и Маргарита»',
     author: 'Булгаков М.А.',
@@ -27,5 +29,5 @@ console.log('')
 
 console.log(students.filter(students => students.passed == true))
 console.log(students.find(students => students.grade > 4.5))
-console.log(students.recude((acc, n) => acc + n, 0))
+console.log(studentsGrade.reduce(((acc, n) => acc + n, 0)/studentsGrade.length).toFixed(2))
 
