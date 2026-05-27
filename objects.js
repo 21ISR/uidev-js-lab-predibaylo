@@ -21,6 +21,14 @@ const book = {
 const u1 = { name: "Иван", age: 20, city: "Казань" }
 const u2 = { name: "Иван Петров", email: "ivan@mail.ru", city: "Москва" }
 
+mergeUsers(user1, user2) {
+  
+}
+
+countByField(arr, field) {
+
+}
+
 console.log(book.info())
 console.log('')
 
@@ -29,5 +37,9 @@ console.log('')
 
 console.log(students.filter(students => students.passed == true))
 console.log(students.find(students => students.grade > 4.5))
-console.log(studentsGrade.reduce(((acc, n) => acc + n, 0)/studentsGrade.length).toFixed(2))
+console.log(studentsGrade.reduce(
+  (counter, adder) => counter + adder,
+  0,
+))
+
 
